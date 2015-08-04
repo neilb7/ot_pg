@@ -1,0 +1,8 @@
+<h1>Editing Collection</h1>
+
+<%= form_for :collection, url: collection_path(@collection), method: :patch do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+<% end %>  
