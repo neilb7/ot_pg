@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  description: MyText
+  desc: MyText
   collection_id: 
 
 two:
   name: MyString
-  description: MyText
+  desc: MyText
   collection_id: 

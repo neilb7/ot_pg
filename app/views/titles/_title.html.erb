@@ -1,0 +1,11 @@
+<p>
+  <strong>Name:</strong>
+  <%= link_to "#{title.name}", ([title.collection, title]) %>
+</p>
+ 
+<p>
+  <strong>Description:</strong>
+  <%= title.desc %>
+</p>
+
+<%= link_to "Destroy Title", [title.collection, title], method: :delete, data: {confirm: "Are you sure?"} %>

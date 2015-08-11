@@ -1,6 +1,6 @@
 <h1>Listing all Collections</h1>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Name</th>
@@ -20,5 +20,5 @@
 </table>
 
 <% if admin_signed_in? %>
-  <%= link_to "New Collection", new_collection_path %>
+  <%= link_to "New Collection", new_collection_path, class: "btn btn-primary" %>
 <% end %>  

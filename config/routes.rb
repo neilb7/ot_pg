@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
   devise_for :admins
 
-  resources :collections
+  resources :collections do
+    resources :titles
+  end  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

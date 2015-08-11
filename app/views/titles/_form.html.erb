@@ -1,0 +1,14 @@
+  <h4>New Title</h4>
+  <%= form_for([@collection,@collection.titles.build]) do |f| %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :desc %>
+      <%= f.text_area :desc %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>    
+  <% end %>
